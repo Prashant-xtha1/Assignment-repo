@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Using Google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bloglist.css">
+
+     <!-- This is Title of my assignment -->
+    <title>Assignment Blog | Bloglist</title>
+</head>
+<body>
+    <!-- Ordered List and nav tag for Navbar -->
+   <nav>
+    <ol class="sidebar">
+        <li onclick="hideSidebar()"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li> <a href="index.html" title="Home">Home</a></li>
+        <li> <a href="gallery.html" title="Gallery">Gallery</a></li>
+        <li> <a href="bloglist.html" title="Blog List">Blog List</a></li>
+        <li> <a href="contact.html" title="Contact">Contact</a></li>
+    </ol>    
+    <ol>
+        <li> <strong><a href="#" style="font-size: 20px; font-style: italic;">AssignmentBlog</a></strong></li>
+        <li class="hideOnMobile"> <a href="index.html" title="Home">Home</a></li>
+        <li class="hideOnMobile"> <a href="gallery.html" title="Gallery">Gallery</a></li>
+        <li class="hideOnMobile"> <a href="bloglist.html" title="Blog List">Blog List</a></li>
+        <li class="hideOnMobile"> <a href="contact.html" title="Contact">Contact</a></li>
+        <li onclick="showSidebar()"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ol> 
+   </nav>
+
+    <!-- Making card lists  -->
+    <div class="card-container">
+        <div class="card">
+            <img src="gallery/bg9.jpg">
+            <div class="card-content">
+                <h3>Mount Everest</h3>
+                <p>Mount Everest is Earth's highest mountain above sea level, located in the Mahalangur Himal sub-range of the Himalayas. The China–Nepal border runs across its summit point.</p>
+                <a href="blogdetail.html" class="btn">Read More</a> 
+                <span>29<sup>th</sup> March, 2024</span>                
+            </div>
+        </div>
+        <div class="card">
+            <img src="gallery/bg2.jpg">
+            <div class="card-content">
+                <h3>Title 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit quaerat, vitae quae quod amet! Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="" class="btn">Read More</a> 
+                <span>29<sup>th</sup> March, 2024</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="gallery/bg4.jpg">
+            <div class="card-content">
+                <h3>Title 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit quaerat, vitae quae quod amet! Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="" class="btn">Read More</a>
+                <span>29<sup>th</sup> March, 2024</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="gallery/bg3.jpg">
+            <div class="card-content">
+                <h3>Title 4</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit quaerat, vitae quae quod amet! Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="" class="btn">Read More</a>
+                <span>29<sup>th</sup> March, 2024</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="gallery/bg5.jpg">
+            <div class="card-content">
+                <h3>Title 5</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit quaerat, vitae quae quod amet! Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="" class="btn">Read More</a>
+                <span>29<sup>th</sup> March, 2024</span>
+            </div>
+        </div>
+        <div class="card">
+            <img src="gallery/bg6.jpg">
+            <div class="card-content">
+                <h3>Title 6</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus reprehenderit quaerat, vitae quae quod amet! Lorem ipsum dolor sit amet consectetur.</p>
+                <a href="" class="btn">Read More</a>
+                <span>29<sup>th</sup> March, 2024</span>
+            </div>
+        </div>
+    </div>
+   
+    
+   <!-- Website footer -->
+   <footer>        
+        <div class="footerbottom">
+            <p>Copyright &copy,2024 Assignment project, All right reserved. Designed by <span>Prashant Kakshapati.</span><br>
+            contact me at: <a href="xyz1@gmail.com ">xyz1@gmail.com </a></p>
+        </div>
+   </footer>
+
+   <!-- JavaScript link -->
+   <script src="script.js"></script>
+   
+</body>
+</html>

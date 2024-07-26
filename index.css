@@ -1,0 +1,152 @@
+/* CSS Selctors:
+    - tagname selector (i.e.: div { ... } )
+    - classname selector (i.e.: .main-nav { ... } )
+    - id selector (i.e.: #container { ... } )
+    - Pseudo element selector  (::before, ::after)
+            - header::before { ... }
+            - header::after { ... }
+    - Pseudo class selector  (:hover, :nth-child(), :first-child etc..)
+            - .main-nav a { ... }
+            - .main-nav a:hover  { ... }
+    - Attribute selector (ie.: [type*="submit"] { ... })
+    - Global selector (ie.: * { ... } )
+    - Group selector
+            - #header, #footer, nav, body { ... }
+    - Direct Child selector (ie.: .main-nav > a { ... } ) 
+    - Ancester Child selector (ie.: .main-nav a { ... } ) 
+    - Next sibling selector (ie.: .site-logo + .main-nav { ... } ) 
+    - All siblings selector (ie.: #container p ~ p { ... } ) 
+*/  
+
+    
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    zoom: 1;    
+}
+
+body{
+    min-height: 100vh;
+    /* Image used for background */
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bg.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ol{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+    /* Hover effect for navbar */
+nav a:hover{
+    background-color: lightcyan;
+}
+
+nav li:first-child{
+    margin-right: auto;     
+}
+
+/* Designing sidebar */
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow:-10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+/* Using Media Query  */
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+}
+
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+body .content{
+   color: #fff;
+   width: 60%;
+   margin-top: 50px;
+   padding: 100px 40px;
+}
+
+body .content h2{
+   font-size: 3em; 
+   font-weight: 900;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   line-height: 65px;
+   margin-bottom: 20px;
+}
+
+body .content a{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+footer .footerbottom{
+    position: fixed;
+    bottom: 0%;
+    color: white;
+    background-color: #111;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footerbottom span{
+    opacity: 0.4;
+    font-weight: 300;
+    font-style: italic;
+}
